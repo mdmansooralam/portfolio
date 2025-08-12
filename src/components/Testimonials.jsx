@@ -18,21 +18,21 @@ function Testimonials() {
                     <button className='hidden lg:block absolute right-0'>Next</button> */}
 
                     <Swiper
+                        slidesPerView={1}
                         breakpoints={{
-                            320: {
-                                slidesPerView: 1,
-                            },
                             1024: {
                                 slidesPerView: 3,
                             },
                         }}
 
-                        modules={[Pagination, Navigation, Scrollbar, A11y]}
+                        modules={[Pagination, Navigation]}
                         spaceBetween={50}
-                        // slidesPerView={3}
-                        // onSlideChange={() => console.log('slide change')}
-                        // onSwiper={(swiper) => console.log(swiper)}
-                        pagination={{ clickable: true }}
+                        pagination={
+                            {
+                                clickable: true,
+                                // el:'.hehehe'
+                            }
+                        }
                         loop='true'
                         className='!py-20'
                         centeredSlides={true}
@@ -86,6 +86,7 @@ function Testimonials() {
 
 
                 </div>
+                    <div className="hehehe flex justify-center gap-3 "></div>
             </div>
 
 

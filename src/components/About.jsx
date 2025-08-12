@@ -3,7 +3,7 @@ import image from '../assets/images/pic-full.jpg'
 
 function About() {
   return (
-    <section className='py-16 lg:py-24 bg-l-gray-50  dark:bg-d-gray-50'>
+    <section id='about' className='py-16 lg:py-24 bg-l-gray-50  dark:bg-d-gray-50'>
         <div className="container">
             <div className='text-center text-sm font-medium mb-6 lg:mb-12'><span className='inline-block py-1 rounded-xl px-5 bg-l-gray-200 dark:bg-d-gray-200 text-l-gray-600 dark:text-d-gray-600'>About me</span></div>
             <div className='grid grid-cols-1 lg:grid-cols-2 items-start gap-12'>
